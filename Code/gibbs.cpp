@@ -21,7 +21,7 @@ NumericMatrix gibbsCpp(int N, int thin){
   for(i=0; i<N; i++){
     // Keep every n*thin sample
     for(j=0; j<thin; j++){
-      x=rgamma(1, 3.0,1.0/(y*y+4))[0];
+      x=rgamma(1, 4.0,1.0/(y*y+4))[0];
       y=rnorm(1, 1.0/(x+1),1.0/sqrt(x+1))[0];
     }
     
